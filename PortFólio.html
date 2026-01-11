@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFólio</title>
+    <link rel="stylesheet" href="PortFólio.css" />
+  </head>
+  <body>
+    <div class="particulas"></div>
+
+    <!-- Adicionado botão hamburger para mobile -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navegacao" id="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">Início</a>
+        </li>
+        <li>
+          <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
+        <li>
+          <a href="#projetos" class="menu-link">Projetos</a>
+        </li>
+        <li>
+          <a href="#tecnologias" class="menu-link">Tecnologias</a>
+        </li>
+        <li>
+          <a href="#contatos" class="menu-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="cabeçalho">
+      <img src="minhaIMAGEM.jpeg" alt="Foto de MIchael" class="perfil" />
+      <h1>Michael Silva</h1>
+      <h2 class="stack">Full Stack Developer</h2>
+    </main>
+
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-TITULO">Sobre mim</h2>
+
+      <div class="sobre-CAIXA">
+        <p class="sobre-PARAGRAFO">
+          Sou Michael Silva Soares, desenvolvedor em formação, motivado pelo
+          desafio de resolver problemas e criar soluções por meio da programação
+          💻. Vejo o desenvolvimento web como uma ferramenta poderosa para
+          transformar ideias em sistemas funcionais, eficientes e acessíveis 🌐.
+          Tenho um perfil proativo, disciplinado e persistente 🎯, com
+          facilidade para aprender e me adaptar a novos desafios. Gosto de
+          analisar problemas, pensar de forma lógica e buscar soluções bem
+          estruturadas, sempre prezando por organização, clareza e boas práticas
+          no código ⚙️. Estou em constante evolução, comprometido em crescer
+          profissionalmente e contribuir de forma positiva para projetos e
+          equipes 🚀.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="titulo-PROJETOS">Meus Projetos</h2>
+      <div class="projetos-CAIXA">
+        <div class="projetos-CARD">
+          <a href="https://michael-pstl.github.io/tecnologiascuriosidades/" target="_blank" rel="external">
+            <img
+              src="Curiosidades & Tecnologias.png"
+              alt="projeto1"
+              class="projetos-IMAGEM"
+            />
+            <div class="caixa-texto-projeto">
+              <h3 class="projetos-TITULO">Tecnologias e Curiosidades</h3>
+              <p class="projetos-PARAGRAFO">
+                Bem-vindo ao nosso espaço de tecnologia e curiosidades! Aqui
+                você encontra fatos interessantes, inovações tecnológicas,
+                histórias da internet e descobertas que mostram como a
+                tecnologia faz parte do nosso dia a dia.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projetos-CARD">
+          <img
+            src="Barbearia Premium.png"
+            alt="projeto2"
+            class="projetos-IMAGEM"
+          />
+          <div class="caixa-texto-projeto">
+            <h3 class="projetos-TITULO">Barbearia Premium</h3>
+            <p class="projetos-paragro">
+              Bem-vindo à nossa barbearia! Um espaço pensado para homens que
+              valorizam estilo, cuidado e personalidade. Trabalhamos com cortes
+              clássicos e modernos, barba bem feita e atendimento de qualidade,
+              sempre focando no seu melhor visual.
+            </p>
+          </div>
+        </div>
+
+        <div class="projetos-CARD">
+          <img
+            src="Evolua seu Futebol.png"
+            alt="projeto3"
+            class="projetos-IMAGEM"
+          />
+          <div class="caixa-texto-projeto">
+            <h3 class="projetos-TITULO">Evolua seu Futebol</h3>
+            <p class="projetos-PARAGRAFO">[desenvolvimento]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="tecnologias">
+      <h2 class="TEC-titulo">Minhas Tecnologias e Ferramentas</h2>
+      <p class="tec-PARAGRAFO"></p>
+
+      <div class="box-TEC">
+        <div class="box-ICON">
+          <img src="java.png" alt="Java" class="icon" />
+          <p>JAVA</p>
+        </div>
+
+        <div class="box-ICON">
+          <img src="Spring.png" alt="Spring" class="icon" />
+          <p>Spring</p>
+        </div>
+
+        <div class="box-ICON">
+          <img src="MySQL.png" alt="MySQL" class="icon" />
+          <p>MySQL</p>
+        </div>
+
+        <div class="box-ICON">
+          <img src="html.png" alt="HTML" class="icon" />
+          <p>HTML</p>
+        </div>
+
+        <div class="box-ICON">
+          <img src="text.png" alt="CSS" class="icon" />
+          <p>CSS</p>
+        </div>
+
+        <div class="box-ICON">
+          <img src="js (1).png" alt="JavaScript" class="icon" />
+          JavaScript
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contato-titulo">Contatos</h2>
+
+      <form
+        class="formulario-contato"
+        id="formulario"
+        onsubmit="enviarWhats(event)"
+      >
+        <div class="nome-form">
+          <input placeholder="Nome" class="campo-form" id="nome" />
+        </div>
+        <div class="grup-form">
+          <textarea
+            placeholder="Digite sua Mensagem"
+            class="campo-form"
+            rows="4"
+            id="mensagem"
+          ></textarea>
+        </div>
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/michael-silva-67a74439b/"
+            target="_blank"
+            rel="external"
+            ><img
+              src="linkedin (1).png"
+              alt="Linkedin"
+              class="social"
+              style="cursor: pointer"
+          /></a>
+          <a
+            href="https://github.com/michael-PSTL"
+            target="_blank"
+            rel="external"
+            ><img
+              src="github-sign.png"
+              alt="GitHub"
+              class="social"
+              style="cursor: pointer"
+          /></a>
+          <a
+            href="https://www.instagram.com/pasteuu._/"
+            target="_blank"
+            rel="external"
+            ><img
+              src="instagram (1).png"
+              alt="Instagram"
+              class="social"
+              style="cursor: pointer"
+          /></a>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      function enviarWhats(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const telefone = "5598984975025";
+
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+        const formatMSG = encodeURIComponent(texto);
+
+        const url = `https://wa.me/${telefone}?text=${formatMSG}`;
+
+        window.open(url, "_blank");
+      }
+
+      const menuToggle = document.getElementById("menuToggle");
+      const navegacao = document.getElementById("navegacao");
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      menuToggle.addEventListener("click", () => {
+        navegacao.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+
+      // Fecha o menu ao clicar em um link
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navegacao.classList.remove("active");
+          menuToggle.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
